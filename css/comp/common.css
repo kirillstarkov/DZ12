@@ -17,7 +17,7 @@
 	height: 100vh;
 }
 
-.slider-fade .slick-arrow {
+.slick-arrow {
 	border-radius: 100%;
 	border: solid 2px white;
 	color: #fff;
@@ -25,9 +25,8 @@
 	height: 40px;
 }
 
-
-.slider-fade .slick-prev,
-.slider-fade .slick-next {
+.slick-prev,
+.slick-next {
 	position: absolute;
     transform: translateY(-50%);
     z-index: 100;
@@ -36,23 +35,67 @@
     padding: 0;
 }
 
-.slider-fade .slick-prev {
+.slick-prev {
 	top: 50%;
-	left: 1%;
+	left: 2%;
 }
 
-.slider-fade .slick-next {
+.slick-next {
 	top: 50%;
-	right: 1%;
+	right: 2%;
 }
 
 
-.slider-fade .slick-prev::before {
+.slick-prev::before {
 	content: '<';
 	font-size: 30px;
 }
 
-.slider-fade .slick-next::before {
+.slick-next::before {
 	content: '>';
 	font-size: 30px;
+}
+
+.slider-fade .slick-dots {
+	list-style: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	bottom: 2%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.slick-dots li {
+	padding: 10px;
+	font-size: 0;
+}
+
+.slick-dots li button {
+	border: solid 2px white;
+	border-radius: 100%;
+	background-color: transparent;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	margin: 0;
+	transition: box-shadow .5s;
+}
+
+.slick-dots .slick-active button {
+	box-shadow: inset 0 0 20px #fff;
+}
+
+.slick-dots li:hover button {
+	box-shadow: inset 0 0 20px #fff;
+}
+
+.card {
+	padding: 0 15px;
+	position: relative;
+}
+
+.card img {
+	width: 100%;
 }
