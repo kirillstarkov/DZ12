@@ -9,3 +9,7 @@
 
 /* Сюда пишем общие стили для проекта (изменяем от макета к макету) */
 @import url(comp/common.css);
+
+@import url(slick/slick.css);
+
+@import url(slick/slick-theme.css);

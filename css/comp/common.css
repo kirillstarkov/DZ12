@@ -1,71 +1,14 @@
-/* Обертка которая обрезает все лишнее что выходит за ширину страници,
-к примеру если вы что то вытаскиваете марджинами то у вас появится горизонтальный скролл на странице, эта обертка его срезает
-+ если вы забыли указать position: relative; на нужном блоке, это ваша отправная точка для позиционирования,
-чтобы не трогать body
-эта обертка есть в каждом проекте */
 
 .wrapper {
 	overflow: hidden;
 	position: relative;
 }
 
-/* Элемент который центрирует контент на странице (только центрирует) */
-
 .container {
-	max-width: 1000px;
 	margin: 0 auto;
 }
 
-/* Обертка для полей формы */
-
-.form-group {
-	margin-bottom: 15px;
-}
-
-/* Поля формы */
-
-.form-control {
-	display: block;
-	width: 100%;
-	padding: 10px 15px;
-	border-color: green;
-	border-radius: 3px;
-	color: #000;
-}
-
-.form-control:focus {
-	outline: none;
-	border-color: #ff0;
-}
-
-/* Стили для кроссбраузерности placeholder полей */
-
-.form-control::-webkit-input-placeholder {
-	color: #f00;
-}
-
-.form-control::-moz-placeholder {
-	opacity: 1;
-	color: #f00;
-}
-
-.form-control:-ms-input-placeholder {
-	color: #f00;
-}
-
-.btn {
-	display: inline-block;
-	vertical-align: top;
-	padding: 10px 15px;
-	border-radius: 4px;
-	background-color: #000;
-	color: #fff;
-	text-decoration: none;
-	border: none;
-	line-height: 1.5;
-	outline: none;
-}
-
-.btn:hover {
-	background-color: #424242;
+.slider-fade img {
+	width: 100vw;
+	height: 100vh;
 }
