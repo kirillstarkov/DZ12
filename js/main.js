@@ -1,3 +1,7 @@
 $(document).ready(function(){
-  $('.slider-fade').slick();
+  $('.slider-fade').slick({
+  	speed: 500,
+  	fade: true,
+  	cssEase: 'linear'
+  });
 });
