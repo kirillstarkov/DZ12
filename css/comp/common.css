@@ -10,11 +10,13 @@
 
 .slider-fade {
 	position: relative;
+	margin-bottom: 20px;
 }
 
 .slider-fade img {
 	width: 100vw;
 	height: 100vh;
+	object-fit: cover;
 }
 
 .slick-arrow {
@@ -91,11 +93,59 @@
 	box-shadow: inset 0 0 20px #fff;
 }
 
+.slick-dots li button:focus {
+	border: transparent;
+}
+
 .card {
-	padding: 0 15px;
+	margin: 0 15px;
 	position: relative;
 }
 
 .card img {
 	width: 100%;
+}
+
+.card .hover-box {
+	background-color: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+}
+
+.card .cnt {
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+}
+
+.card .social-ntwrks {
+	display: flex;
+	margin: 0 auto;
+	padding-left: 0px;
+	justify-content: center;
+	list-style: none;
+}
+
+.card .social-ntwrks li {
+	padding: 10px;
+	margin: 1px;
+	background-color: #fff;
+}
+
+.card .social-ntwrks a {
+	color: #546e7a;
+	padding: 11px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.card:hover .hover-box {
+	opacity: 1;
 }
