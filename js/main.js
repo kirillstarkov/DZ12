@@ -4,8 +4,9 @@ $(document).ready(function(){
   	fade: true,
   	arrows: true,
   	dots: true,
-  	responsive: [{
-  		breakpoint: 768,
+  	responsive: [
+    {
+  		breakpoint: 1024,
   		settings: {
   			arrows: false,
   			dots: true,
@@ -15,7 +16,7 @@ $(document).ready(function(){
 
   $('.sldr').slick({
   	speed: 500,
-  	arrows: false,
+  	arrows: true,
   	slidesToShow: 4,
 
   	responsive: [
@@ -23,7 +24,6 @@ $(document).ready(function(){
   		breakpoint: 460,
   		settings: {
   			arrows: false,
-  			dots: true,
   			slidesToShow: 1
   		}
   	},
@@ -31,7 +31,6 @@ $(document).ready(function(){
   		breakpoint: 768,
   		settings: {
   			arrows: false,
-  			dots: true,
   			slidesToShow: 2
   		}
   	},
@@ -40,7 +39,7 @@ $(document).ready(function(){
   		settings: {
   			arrows: true,
   			dots: false,
-  			slidesToShow: 4
+  			slidesToShow: 3
   		}
   	}
   	]
