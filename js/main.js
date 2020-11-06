@@ -18,12 +18,14 @@ $(document).ready(function(){
   	speed: 500,
   	arrows: true,
   	slidesToShow: 4,
+    dots: false,
 
   	responsive: [
   	{
-  		breakpoint: 460,
+  		breakpoint: 576,
   		settings: {
   			arrows: false,
+        dots: true,
   			slidesToShow: 1
   		}
   	},
@@ -31,6 +33,7 @@ $(document).ready(function(){
   		breakpoint: 768,
   		settings: {
   			arrows: false,
+        dots: true,
   			slidesToShow: 2
   		}
   	},
