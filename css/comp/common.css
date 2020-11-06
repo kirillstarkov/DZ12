@@ -6,11 +6,12 @@
 
 .container {
 	margin: 0 auto;
+	max-width: 1400px;
+	padding: 20px 0;
 }
 
 .slider-fade {
 	position: relative;
-	margin-bottom: 20px;
 }
 
 .slider-fade img {
@@ -98,54 +99,69 @@
 }
 
 .card {
-	margin: 0 15px;
-	position: relative;
+	margin: 0 14px;
 }
 
 .card img {
 	width: 100%;
+	height: auto;
+}
+
+.cnt {
+	position: relative;
 }
 
 .card .hover-box {
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(255,255,255,.5);
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	right: 0;
+	bottom: 0;
 	display: flex;
 	flex-direction: column;
 	opacity: 0;
 	transition: opacity .3s ease-in-out;
 }
 
-.card .cnt {
-	flex-grow: 1;
-	display: flex;
-	align-items: center;
+.text-area {
+	padding: 10px 20px;
+	background-color: #e1e6ea;
+	transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 
-.card .social-ntwrks {
+.text-area p {
+	margin: 0;
+}
+
+.card  .social-ntwrks {
 	display: flex;
-	margin: 0 auto;
-	padding-left: 0px;
+	margin-bottom: 0;
+	padding: 0px;
 	justify-content: center;
+	align-items: center;
 	list-style: none;
+	flex-grow: 1;
 }
 
 .card .social-ntwrks li {
-	padding: 10px;
+	padding: 15px 0;
 	margin: 1px;
-	background-color: #fff;
+	background-color: #36454f;
 }
 
 .card .social-ntwrks a {
-	color: #546e7a;
-	padding: 11px;
+	color: #fff;
+	padding: 15px;
 	text-decoration: none;
 	font-size: 20px;
 }
 
 .card:hover .hover-box {
 	opacity: 1;
+}
+
+.card:hover .text-area {
+	background-color: #36454f;
+	color: #fff;
 }

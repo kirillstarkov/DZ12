@@ -2,12 +2,12 @@ $(document).ready(function(){
   $('.slider-fade').slick({
   	speed: 500,
   	fade: true,
-  	arrows: false,
+  	arrows: true,
   	dots: true,
   	responsive: [{
   		breakpoint: 768,
   		settings: {
-  			arrows: true,
+  			arrows: false,
   			dots: true,
   		}
   	}]
@@ -42,7 +42,7 @@ $(document).ready(function(){
   			dots: false,
   			slidesToShow: 4
   		}
-  	},
+  	}
   	]
   });
 });
